@@ -1,0 +1,48 @@
+.button {
+  width: 180px;
+  padding: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Cormorant', 'Arial', serif;
+  border: 0;
+  border-radius: 8px;
+  color: @text-color-red;
+  background: #f0eae7;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: @text-color-red;
+
+  }
+
+  &:active {
+    background: @color-pink;
+    color: #fff;
+  }
+
+}
+btn-office {
+  display: flex;
+}
+
+@media @tablet-widths {
+  .button {
+    width: auto;
+    height: 40px;
+    padding: 8px;
+
+  }
+}
+
+@media @desktop-widths {
+  .button {
+    width: 180px;
+  }
+}

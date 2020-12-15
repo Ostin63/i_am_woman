@@ -1,0 +1,51 @@
+.nav-bar {
+  display: none;
+}
+
+@media @desktop-widths {
+  .nav-bar {
+    position: fixed;
+    top: 250px;
+    right: calc(50% - 1315px / 2);
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+
+    .nav__block {
+      list-style: none;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      .block {
+        width: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 3px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: 'Open Sans', 'Arial', serif;
+        color: @text-color-black;
+      }
+
+      .show {
+        margin-left: -3px;
+        font-size: 16px;
+        color: @text-color-red;
+
+        &::after {
+          content: "";
+          position: relative;
+          margin-top: 15px;
+          margin-left: 15px;
+          margin-bottom: -35px;
+          display: block;
+          width: 1px;
+          height: 92px;
+          background: @text-color-black;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.form-input-office {
+  width: 290px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: -70px;
+  padding: 15px;
+  padding-top: 40px;
+  background: rgba(236, 229, 225, 0.9);
+  border: 5px solid @color-pink;
+  box-sizing: border-box;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+
+  .clearfix {
+    display: flex;
+    justify-content: space-between;
+
+    a,
+    button {
+      width: 120px;
+      padding: 10px 0;
+      color: #fff;
+      background: #b6030c;
+      border-radius: 5px;
+      border: 2px solid #fff;
+
+
+      &:hover {
+        background: #745455;
+        border: 2px solid rgb(153, 87, 87);
+      }
+
+      &:active {
+        color: @text-color-black;
+        background: #d6cccd;
+      }
+    }
+
+    a {
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
+
+.form__errors {
+  border: 1px solid rgb(245, 7, 7);
+}
+
+.form__message {
+  margin: 0;
+  color: rgb(245, 7, 7);
+  font-family: 'Cormorant', 'Arial', serif;
+
+}
+
+.btn__cancel {
+  position: relative;
+  top: -10px;
+  right: -220px;
+  width: 30px;
+  height: 30px;
+}
+
+.private-office--close {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 2px 0;
+  margin: 0;
+  margin-right: -15px;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  display: block;
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 2px;
+    top: 13px;
+    right: 0px;
+    background: @text-color-red;
+
+    &:hover {
+      background: #c2b0b1;
+    }
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media @tablet-widths {
+  .form-input-office {
+    width: 700px;
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+  }
+
+  .btn__cancel {
+    top: -5px;
+    right: -520px;
+  }
+}

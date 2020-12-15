@@ -1,0 +1,153 @@
+.basket {
+  font-size: 20px;
+  font-family: 'Cormorant', 'Arial', serif;
+}
+
+.empty--basket {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.empty--basket-text {
+  font-size: 30px;
+  text-align: center;
+  color: @text-color-red;
+}
+
+.basket__product {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    width: 60px;
+    border: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Cormorant', 'Arial', serif;
+  }
+
+  .basket__block {
+    width: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.basket__address {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: Space-around;
+
+  .address {
+    margin: 10px 0;
+  }
+
+  .form-control {
+    width: 290px;
+    border: 0;
+    font-size: 20px;
+    font-family: 'Cormorant', 'Arial', serif;
+    box-sizing: border-box;
+  }
+
+  .text {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+  }
+
+  .invalid {
+    border: 1px solid rgb(245, 7, 7);
+
+  }
+
+  .errors {
+    margin: 0;
+    color: rgb(245, 7, 7);
+    font-size: 15px;
+  }
+}
+
+.basket__delete {
+  margin-top: 30px;
+  text-align: right;
+
+  .button {
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+
+  }
+}
+
+.basket__total {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+
+  input {
+    width: 150px;
+    border: 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Cormorant', 'Arial', serif;
+  }
+
+}
+
+.basket__get {
+  margin-top: 30px;
+  text-align: right;
+  .btn__get {
+    text-align: center;
+  }
+}
+
+@media @tablet-widths {
+  .basket__form {
+    margin-bottom: -127px;
+  }
+
+  .basket__product {
+    .basket__block {
+      width: 80px;
+    }
+
+    input {
+      width: 150px;
+      font-size: 30px;
+    }
+  }
+
+  .basket__total {
+    input {
+      font-size: 30px;
+    }
+
+  }
+}
+
+@media @desktop-widths {
+  .basket__form {
+    width: 724px;
+    margin: 0 auto;
+    margin-bottom: -127px;
+  }
+
+  .basket__product {
+    margin-top: 30px;
+  }
+
+  .empty--basket {
+    margin-top: 129px;
+    margin-bottom: 110px;
+  }
+
+  .empty--basket-text {
+    font-size: 50px;
+
+  }
+}

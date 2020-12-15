@@ -1,0 +1,46 @@
+.main-page__news {
+  margin-top: 54px;
+
+  .news__menu {
+    .ul-reset()
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .see-all {
+    margin-top: 40px;
+
+    a {
+      margin: auto;
+      font-size: 14px;
+      font-family: 'Cormorant', 'Arial', serif;
+      font-weight: 300;
+      color: @text-color-black;
+      display: block;
+      text-align: center;
+
+      &:hover {
+        color: @text-color-red;
+      }
+    }
+  }
+}
+
+@media @tablet-widths {
+  .main-page__news {
+    .see-all {
+      margin-top: 130px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .main-page__news { 
+     padding-top: 175px;
+    .see-all {
+      margin-top: 150px;
+    }
+  }
+}

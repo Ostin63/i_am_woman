@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header-catalog">
+    <h1 hidden>Каталог одежды</h1>
+    <div class="catalog--nav container">
+      <div class="catalog-logo">
+        <a href="index.html" title="вход на главную страницу">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-dekstop.png">
+            <img src="img/logo-tablet.png" srcset="img/logo-tablet.png" alt="image" alt="logo">
+          </picture>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="form-registration">
+      <h2>Регистрация</h2>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div class="input__field">
+          
+          <input class="form__input form__errors" type="text" id="name" value="" name="name"
+            placeholder="Введите имя">
+          <p class="form__message">Это поле обязательно</p>
+          
+        </div>
+        <div class="input__field">
+          <input class="form__input form__errors" type="email" name="email" id="email" value=""
+            placeholder="Введите e-mail">
+
+            <p class="form__message">Это поле обязательно</p>
+        </div>
+
+        <div class="input__field">
+          <input class="form__input form__errors" type="password" name="password" id="password" value="" maxlength="12"
+            placeholder="Введите пароль">
+            <p class="form__message">Это поле обязательно</p>
+        </div>
+ 
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+        </label>
+        <div class="clearfix">
+          <a type="button" class="cancel" href="index.html">Отменить</a>
+          <button type="submit" class="signupbtn">Регистрация</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="catalog-footer footer">
+    <div class="footer-block container">
+      <div class="footer--info area-footer-info">
+        <div class="footer-phone">
+          <p class="footer-item">Звонок с сайта:</p>
+          <p class="phone">+7 495 792 93 12</p>
+        </div>
+        <div class="footer-network">
+          <p class="footer-item">Присоединяйся:</p>
+          <ul>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.youtube.com/">Youtube</a></li>
+            <li><a href="https://vk.com/">Vkontakte</a></li>
+          </ul>
+        </div>
+        <div class="footer-form">
+          <form class="footer-form--login" action="#" method="post">
+            <p><input class="footer-form-submit" type="submit" value="Получите скидку 5%"></p>
+            <div class=footer-form--item">
+              <p class="footer-form-mail">
+                <label for="e-mail-1"></label>
+                <input class="mail" type="text" name="e-mail" id="e-mail-1" placeholder="Ваш E-mail">
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="payment">
+          <p class="footer-item">Принимаем к оплате:</p>
+          <ul>
+            <li>
+              <img src="img/visa.png" width="36" height="36" alt="visa">
+            </li>
+            <li>
+              <img src="img/mastercard.png" width="57" height="36" alt="mastercard">
+            </li>
+            <li>
+              <img src="img/paypal.png" width="36" height="36" alt="paypal">
+            </li>
+          </ul>
+        </div>
+        <p class="choice-of-pay">Вы можете оплатить наличными при получении либо выбрать <a href="#">другой способ</a>
+        </p>
+        <div class="copyright">
+          <p>&copy;</p>
+          <p>2008–2018</p>
+          <p>I AM WOMEN</p>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+</body>
+</html>

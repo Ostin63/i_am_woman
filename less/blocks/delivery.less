@@ -1,0 +1,78 @@
+.main-delivery-payment {
+  font-family: 'Cormorant', 'Arial', serif;
+}
+
+.section-del-pay {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: rgb(248, 247, 247);
+
+  ul {
+    .ul-reset();
+  }
+
+  .action-block {
+    background: #fff;
+    color: #000;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+
+.delivery-payment {
+  display: flex;
+  margin: 0;
+  cursor: pointer;
+
+  li {
+    width: 140px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .action-btn {
+    background: #fff;
+    color: #000;
+  }
+}
+
+.block-card {
+  display: flex;
+}
+
+.get__del {
+  width: 220px;
+  padding: 5px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  text-align: center;
+  border: 1px solid @text-color-black;
+
+  .get__del--border {
+    padding: 5px;
+    border: 1px solid @text-color-black;
+  }
+}
+
+.delivery,
+.pay {
+  padding: 15px;
+  display: none;
+}
+
+.action-block {
+  display: block;
+}
+
+.del-footer {
+  margin-top: 0;
+}
+
+@media @tablet-widths {
+  .del-footer {
+    margin-top: 0;
+  }
+}

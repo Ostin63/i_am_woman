@@ -1,0 +1,134 @@
+.main-page__brand {
+  margin-top: 75px;
+  font-family: 'Cormorant', 'Arial', serif;
+}
+
+.brand__block {
+  box-sizing: border-box;
+
+  h2 {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.brand__block-text {
+  width: 290px;
+  height: 459px;
+  background: url("../img/brend.jpg") 50% 40% no-repeat;
+  margin-top: 65px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.brand__text-top p,
+.brand__text-bottom p {
+  width: 265px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+@media @tablet-widths {
+  .brand__block-text {
+    width: 100%;
+    height: 906px;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .brand-bg--top {
+    position: relative;
+    width: 352px;
+    height: 906px;
+    background: url("../img/brend-bg-top.jpg") 0% 0% no-repeat;
+    background-size: 352px 544px;
+  }
+
+  .brand-bg--bottom {
+    position: relative;
+    width: 352px;
+    height: 906px;
+    background: url("../img/brend-bg-bottom.jpg") 100% 100% no-repeat;
+    background-size: 352px 544px;
+  }
+
+  .brand__text-top {
+    position: absolute;
+    width: 457px;
+    height: 202px;
+    top: 38px;
+    left: 267px;
+    background: rgba(236, 229, 225, 0.8);
+
+    p {
+      width: 402px;
+    }
+  }
+
+  .brand__text-bottom {
+    position: absolute;
+    width: 432px;
+    height: 202px;
+    right: 294px;
+    bottom: 70px;
+    background: rgba(236, 229, 225, 0.8);
+
+    p {
+      width: 405px;
+      padding-top: 40px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .main-page__brand {
+    padding-top: 175px;
+  }
+  .brand__block-text {
+    width: 1035px;
+    height: 1115px;
+    margin: 0 auto;
+    margin-top: 110px;
+    font-size: 20px;
+  }
+
+  .brand-bg--top {
+    position: relative;
+    width: 500px;
+    height: 1115px;
+    background: url("../img/brend-bg-top-desktop.jpg") 0% 0% no-repeat;
+    background-size: 500px 713px;
+  }
+
+  .brand-bg--bottom {
+    position: relative;
+    width: 500px;
+    height: 1115px;
+    background: url("../img/brend-bg-bottom-desktop.jpg") 100% 100% no-repeat;
+    background-size: 500px 713px;
+  }
+
+  .brand__text-top {
+    width: 613px;
+    height: 243px;
+    top: 70px;
+    left: 419px;
+
+    p {
+      width: 523px;
+    }
+  }
+
+  .brand__text-bottom {
+    width: 611px;
+    height: 243px;
+    right: 420px;
+
+    p {
+      width: 405px;
+      padding-top: 40px;
+    }
+  }
+}

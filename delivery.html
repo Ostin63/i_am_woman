@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header-catalog">
+    <h1 hidden>Каталог одежды</h1>
+    <nav class="catalog--nav container">
+      <div class="catalog-logo">
+        <a href="index.html" title="вход на главную страницу">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-dekstop.png">
+            <img src="img/logo-tablet.png" srcset="img/logo-tablet.png" alt="image" alt="logo">
+          </picture>
+        </a>
+      </div>
+      <p class="button btn-catalog" type="button"><a href="catalog.html">Каталог</a></p>
+      <p class="button btn-delivery action" type="button"><a href="#">Оплата и доставка</a></p>
+      <p class="button btn-basket" type="button">
+        <a href="basket.html">Карзина</a>
+        <span class="basket-counter">1</span>
+      </p>
+      <a class="button btn-office" href="#" type="button">Личный кабинет</a>
+      <div class="block-user">
+        <p>Привет</p>
+        <p>Дмитрий</p>
+      </div>
+    </nav>
+  </header>
+  <div>
+    <div class="modal-private-office priv-office">
+      <h2>Вход в личный кабинет</h2>
+      <button class="private-office--close"></button>
+      <div class="private-office--form">
+        <a class="private-office--input" type="button" href="input-office.html">Вход</a>
+        <a class="private-office--registration" type="button" href="form-registration.html">Регистрация</a>
+      </div>
+    </div>
+  </div>
+  <main class="main-delivery-payment">
+    <section class="section-del-pay">
+      <h1 hidden>Доставка и оплата</h1>
+      <div class="container">
+        <div class="get__del">
+          <div class="get__del--border">
+            <p>Ваш заказ отправлен.</p>
+            <p>Наш оператор свяжется с Вами</p>
+          </div>
+        </div>
+        <ul class="delivery-payment">
+          <li class="btn-pay action-btn">
+            <p>Способы доставки</p>
+          </li>
+          <li class="btn-deliv">
+            <p>Оплата</p>
+          </li>
+        </ul>
+        <div class="delivery action-block">
+          <ul>
+            <li>
+              <h3>Доставка в постамат или пункт выдачи PickPoint</h3>
+              <p>Вы можете забрать свой заказ в одном из
+                постаматов или пункте выдачи Pickpoint.</p>
+            </li>
+            <li>
+              <h3>Доставка курьерской службой</h3>
+              <p>Заказ будет доставлен по указанному адресу после предварительного звонка оператора.</p>
+            </li>
+            <li>
+              <h3>Экспресс доставка</h3>
+              <p>Курьер доставит заказ по указанному адресу в течение 30 и более минут.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="pay">
+          <ul>
+            <li>
+              <h3>Оплата банковскими картами</h3>
+              <div class="block-card">
+                <p><img src="img/visa.png" width="36" height="36" alt="visa"></p>
+                <p><img src="img/mastercard.png" width="57" height="36" alt="mastercard"></p>
+                <p><img src="img/paypal.png" width="36" height="36" alt="paypal"></p>
+              </div>
+            </li>
+            <li>
+              <h3>Оплата банковской картой при получении заказа</h3>
+              <div class="block-card">
+                <p><img src="img/visa.png" width="36" height="36" alt="visa"></p>
+                <p><img src="img/mastercard.png" width="57" height="36" alt="mastercard"></p>
+                <p><img src="img/paypal.png" width="36" height="36" alt="paypal"></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="catalog-footer del-footer footer">
+    <div class="footer-block container">
+      <div class="footer--info area-footer-info">
+        <div class="footer-phone">
+          <p class="footer-item">Звонок с сайта:</p>
+          <p class="phone">+7 495 792 93 12</p>
+        </div>
+        <div class="footer-network">
+          <p class="footer-item">Присоединяйся:</p>
+          <ul>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.youtube.com/">Youtube</a></li>
+            <li><a href="https://vk.com/">Vkontakte</a></li>
+          </ul>
+        </div>
+        <div class="footer-form">
+          <form class="footer-form--login" action="#" method="post">
+            <p><input class="footer-form-submit" type="submit" value="Получите скидку 5%"></p>
+            <div class=footer-form--item">
+              <p class="footer-form-mail">
+                <label for="e-mail-1"></label>
+                <input class="mail" type="text" name="e-mail" id="e-mail-1" placeholder="Ваш E-mail">
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="payment">
+          <p class="footer-item">Принимаем к оплате:</p>
+          <ul>
+            <li>
+              <img src="img/visa.png" width="36" height="36" alt="visa">
+            </li>
+            <li>
+              <img src="img/mastercard.png" width="57" height="36" alt="mastercard">
+            </li>
+            <li>
+              <img src="img/paypal.png" width="36" height="36" alt="paypal">
+            </li>
+          </ul>
+        </div>
+        <p class="choice-of-pay">Вы можете оплатить наличными при получении либо выбрать <a href="#">другой способ</a>
+        </p>
+        <div class="copyright">
+          <p>&copy;</p>
+          <p>2008–2018</p>
+          <p>I AM WOMEN</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <div class="modal-overlay"></div>
+  <script src="js/jQuery3.3.1.min.js"></script>
+  <script src="js/script-del-pay.js"></script>
+</body>
+
+</html>

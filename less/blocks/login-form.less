@@ -1,0 +1,122 @@
+.login-form {
+  width: 285px;
+  height: 390px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: rgb(236, 229, 225);
+  opacity: 0.902;
+  box-sizing: border-box;
+
+  .form-item {
+    font-size: 18px;
+    color: @text-color-red;
+
+    p {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .mail {
+      width: 179px;
+      margin-top: 35px;
+      font-size: 14px;
+      font-weight: 300;
+      text-align: center;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      background-color: rgb(236, 229, 225);
+      font-family: 'Cormorant', 'Arial', serif;
+    }
+  }
+
+  p {
+    text-align: center;
+
+    .form-submit {
+      margin: 0;
+      margin-top: 40px;
+      width: 156px;
+      height: 36px;
+      font-size: 16px;
+      font-weight: 400;
+      border-radius: 2px;
+      background: @text-color-red;
+      color: #ffffff;
+      font-family: 'Cormorant', 'Arial', serif;
+    }
+  }
+
+  p:last-child {
+    font-weight: 300;
+    font-size: 10px;
+    color: #736966;
+    font-family: 'Open Sans', 'Arial', serif;
+  }
+}
+
+@media @tablet-widths {
+  .login-form {
+    width: 556px;
+    height: 336px;
+    padding-top: 67px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .form-item {
+      font-size: 24px;
+
+      .mail {
+        width: 176px;
+        margin-top: 30px;
+      }
+    }
+
+    p:last-child {
+      font-size: 11px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .login-form {
+    width: 876px;
+    height: 395px;
+    padding-top: 80px;
+    padding-left: 90px;
+    padding-right: 90px;
+
+    p {
+      .form-submit {
+        width: 167px;
+        height: 36px;
+        font-size: 18px;
+      }
+    }
+
+    .form-item {
+      font-size: 36px;
+
+      .mail {
+        width: 270px;
+        margin-top: 30px;
+        font-size: 16px;
+      }
+
+
+    }
+
+    p:last-child {
+      width: 292px;
+      margin: 0 auto;
+      font-size: 12px;
+    }
+
+    .form-submit {
+      width: 167px;
+      height: 36px;
+    }
+  }
+}

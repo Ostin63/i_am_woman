@@ -1,0 +1,58 @@
+.page-top {
+  width: 100%;
+  padding: 0 15px;
+  padding-top: 9px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.page-logo {
+  display: none;
+}
+
+@media @tablet-widths {
+  .page-top {
+    width: 694px;
+    padding: 0;
+    padding-top: 40px;
+    margin-left: -9px;
+  }
+
+  .page-top__menu {
+    width: 200px;
+  }
+
+  .page-logo {
+    margin-top: -10px;
+    display: block;
+
+    img {
+      width: 126px;
+      height: 28px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .page-top {
+    width: 1200px;
+    padding-top: 35px;
+    margin-left: -110px;
+  }
+
+  .page-top__menu {
+    width: 600px;
+  }
+
+  .page-logo {
+    margin-top: 0;
+    display: block;
+
+    img {
+      width: 156px;
+      height: 34px;
+    }
+  }
+}

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>catalog</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header-catalog">
+    <h1 hidden>Каталог одежды</h1>
+    <nav class="catalog--nav container">
+      <div class="catalog-logo">
+        <a href="index.html" title="вход на главную страницу">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-dekstop.png">
+            <img src="img/logo-tablet.png" srcset="img/logo-tablet.png" alt="image" alt="logo">
+          </picture>
+        </a>
+      </div>
+      <p class="button btn-catalog action" type="button"><a href="#">Каталог</a></p>
+      <p class="button btn-delivery" type="button"><a href="delivery.html">Оплата и доставка</a></p>
+      <p class="button btn-basket" type="button">
+        <a href="basket.html">Карзина</a>
+        <span class="basket-counter" id="clicks">0</span>
+      </p>
+      <a class="button btn-office" href="#" type="button">Личный кабинет</a>
+      <div class="block-user">
+        <p>Дмитрий</p>
+      </div>
+    </nav>
+    <ul class="catalog-item container">
+      <li><button class="button button-cat btn-coat">Пальто</button></li>
+      <li><button class="button button-cat btn-vests">Жилеты и жакеты</button></li>
+      <li><button class="button button-cat btn-costumes">Костюмы</button></li>
+      <li><button class="button button-cat btn-dresses">Платья</button></li>
+      <li><button class="button button-cat btn-blouses">Блузы и топы</button></li>
+      <li><button class="button button-cat btn-skirts">Юбки и брюки</button></li>
+      <li><button class="button button-cat btn-Accessoriesa">Аксессуары</button></li>
+    </ul>
+  </header>
+  <div class="popup-catalog">
+    <div class="modal container">
+      <div class="modal__button">
+        <button class="modal__toogle toogle">
+          <span class="toogle-top"></span>
+          <span class="toogle-middle"></span>
+          <span class="toogle-bottom"></span>
+        </button>
+        <button class="close"></button>
+      </div>
+      <nav class="modal--nav">
+        <h2>Каталог</h2>
+        <ul class="modal--item">
+          <li class="modal--list"><a href="#">Пальто</a></li>
+          <li class="modal--list"><a href="#">Жилеты и жакеты</a></li>
+          <li class="modal--list"><a href="#">Костюмы</a></li>
+          <li class="modal--list"><a href="#">Трикотаж</a></li>
+          <li class="modal--list"><a href="#">Платья</a></li>
+          <li class="modal--list"><a href="#">Блузы и топы</a></li>
+          <li class="modal--list"><a href="#">Футболки</a></li>
+          <li class="modal--list"><a href="#">Юбки и брюки</a></li>
+          <li class="modal--list"><a href="#">Аксессуары</a></li>
+          <li class="modal--list"><a href="#brand">О бренде</a></li>
+          <li class="modal--list"><a href="#">Оферта</a></li>
+          <li class="modal--list"><a href="#">Оплата и доставка</a></li>
+          <li class="modal--list"><a href="#">Возврат</a></li>
+          <li class="modal--list"><a href="#">Контакты</a></li>
+          <li class="modal--list"><a href="#">Отзывы</a></li>
+          <li class="modal--list"><a href="#new">New</a></li>
+          <li class="modal--list"><a href="#">Sale</a></li>
+          <li class="modal--list tablet"><a href="#">Looks</a></li>
+          <li class="modal--list tablet"><a href="#blog">Блог</a></li>
+          <li class="modal--list tablet"><a href="#">Streetstyle</a></li>
+          <li class="modal--list tablet modal-priv"><a href="#">Войти в личный кабинет</a></li>
+        </ul>
+      </nav>
+      <form class="menu modal-search" id="search" method="GET">
+        <button class="menu-search" type="submit" form="search">
+          <span class="menu-search--lens"></span>
+          <span class="menu-search--pen"></span>
+        </button>
+        <p><input class="form-input" type="search" placeholder="Найти на сайте"></p>
+      </form>
+    </div>
+    <p class="left-vertical-label"><span></span>Распродажа SS’18</p>
+  </div>
+  <main class="main-catalog container">
+    <section class="main-catalog__section">
+      <h2>Пальто</h2>
+      <lu class="section-item">
+        <li>
+          <div class="cart">
+            <img src="img/img-catalog/coat-1.jpg" alt="Пальто">
+            <div class="cart-name">
+              <p class="name--product">Пальто</p>
+            </div>
+
+            <div class="cart-price">
+              <p class="price--product">8900</p>
+              <p>рублей</p>
+            </div>
+            <p>
+              <button class="button key-buy">купить</button>
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="img/img-catalog/coat-2.jpg" alt="Пальто">
+          <p class="text">Пальто</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/coat-3.jpg" alt="Пальто">
+          <p class="text">Пальто</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/coat-4.jpg" alt="Пальто">
+          <p class="text">Пальто</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/coat-5.jpg" alt="Пальто">
+          <p class="text">Пальто</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/coat-6.jpg" alt="Пальто">
+          <p class="text">Пальто</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+      </lu>
+    </section>
+    <section class="main-catalog__section">
+      <h2>Жилеты и жакеты</h2>
+      <lu class="section-item">
+        <li>
+          <img src="img/img-catalog/vest-1.jpg" alt="Жилет">
+          <p class="text">Жилет</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/vest-2.jpg" alt="Жакет">
+          <p class="text">Жакет</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/vest-3.jpg" alt="Жилет">
+          <p class="text">Жилет</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/vest-4.jpg" alt="Жакет">
+          <p class="text">Жакет</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/vest-5.jpg" alt="Жилет">
+          <p class="text">Жилет</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/vest-6.jpg" alt="Жакет">
+          <p class="text">Жакет</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+      </lu>
+    </section>
+    <section class="main-catalog__section">
+      <h2>Костюмы</h2>
+      <lu class="section-item">
+        <li>
+          <img src="img/img-catalog/costume-1.jpg" alt="Костюм">
+          <p class="text">Костюм</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/costume-2.jpg" alt="Костюм">
+          <p class="text">Костюм</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/costume-3.jpg" alt="Костюм">
+          <p class="text">Костюм</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/costume-4.jpg" alt="Костюм">
+          <p class="text">Костюм</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/costume-5.jpg" alt="Костюм">
+          <p class="text">Костюм</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/costume-6.jpg" alt="Костюм">
+          <p class="text">Костюм</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+      </lu>
+    </section>
+    <section class="main-catalog__section">
+      <h2>Платье</h2>
+      <lu class="section-item">
+        <li>
+          <img src="img/img-catalog/dress-1.jpg" alt="Платье">
+          <p class="text">Платье</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/dress-2.jpg" alt="Платье">
+          <p class="text">Платье</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/dress-3.jpg" alt="Платье">
+          <p class="text">Платье</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/dress-4.jpg" alt="Платье">
+          <p class="text">Платье</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/dress-5.jpg" alt="Платье">
+          <p class="text">Платье</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/dress-6.jpg" alt="Платье">
+          <p class="text">Платье</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+      </lu>
+    </section>
+    <section class="main-catalog__section">
+      <h2>Блузы и топы</h2>
+      <lu class="section-item">
+        <li>
+          <img src="img/img-catalog/blouse-1.jpg" alt="Блузка">
+          <p class="text">Блузка</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/blouse-2.jpg" alt="Tоп">
+          <p class="text">Tоп</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/blouse-3.jpg" alt="Tоп">
+          <p class="text">Блузка</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/blouse-4.jpg" alt="Блузка">
+          <p class="text">Блузка</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/blouse-5.jpg" alt="Tоп">
+          <p class="text">Блузка</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/blouse-6.jpg" alt="Блузка">
+          <p class="text">Блузка</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+      </lu>
+    </section>
+    <section class="main-catalog__section">
+      <h2>Юбки и брюки</h2>
+      <lu class="section-item">
+        <li>
+          <img src="img/img-catalog/pants-1.jpg" alt="Брюки">
+          <p class="text">Брюки</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/pants-2.jpg" alt="Брюки">
+          <p class="text">Юбка</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/pants-3.jpg" alt="Брюки">
+          <p class="text">Юбка</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/pants-4.jpg" alt="Брюки">
+          <p class="text">Юбка</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/pants-5.jpg" alt="Брюки">
+          <p class="text">Юбка</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/pants-6.jpg" alt="Брюки">
+          <p class="text">Брюки</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+      </lu>
+    </section>
+    <section class="main-catalog__section">
+      <h2>Аксессуары</h2>
+      <lu class="section-item">
+        <li>
+          <img src="img/img-catalog/accessories-1.jpg" alt="accessories">
+          <p class="text">Аксессуары</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/accessories-3.jpg" alt="accessories">
+          <p class="text">Аксессуары</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/accessories-4.jpg" alt="accessories">
+          <p class="text">Аксессуары</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/accessories-2.jpg" alt="accessories">
+          <p class="text">Аксессуары</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/accessories-5.jpg" alt="accessories">
+          <p class="text">Аксессуары</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+        <li>
+          <img src="img/img-catalog/accessories-6.jpg" alt="accessories">
+          <p class="text">Аксессуары</p>
+          <p class="price"><span></span>8 900 рублей</p>
+          <p><button class="button key-buy">купить</button></p>
+        </li>
+      </lu>
+    </section>
+    <div class="product__get">
+      <div class="product__get--border">
+        <p>Ваш товар отправлен в корзину</p>
+      </div>
+    </div>
+  </main>
+  <footer class="catalog-footer footer">
+    <div class="footer-block container">
+      <div class="footer--info area-footer-info">
+        <div class="footer-phone">
+          <p class="footer-item">Звонок с сайта:</p>
+          <p class="phone">+7 495 792 93 12</p>
+        </div>
+        <div class="footer-network">
+          <p class="footer-item">Присоединяйся:</p>
+          <ul>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.youtube.com/">Youtube</a></li>
+            <li><a href="https://vk.com/">Vkontakte</a></li>
+          </ul>
+        </div>
+        <div class="footer-form">
+          <form class="footer-form--login" action="#" method="post">
+            <p><input class="footer-form-submit" type="submit" value="Получите скидку 5%"></p>
+            <div class=footer-form--item">
+              <p class="footer-form-mail">
+                <label for="e-mail-1"></label>
+                <input class="mail" type="text" name="e-mail" id="e-mail-1" placeholder="Ваш E-mail">
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="payment">
+          <p class="footer-item">Принимаем к оплате:</p>
+          <ul>
+            <li>
+              <img src="img/visa.png" width="36" height="36" alt="visa">
+            </li>
+            <li>
+              <img src="img/mastercard.png" width="57" height="36" alt="mastercard">
+            </li>
+            <li>
+              <img src="img/paypal.png" width="36" height="36" alt="paypal">
+            </li>
+          </ul>
+        </div>
+        <p class="choice-of-pay">Вы можете оплатить наличными при получении либо выбрать <a href="#">другой способ</a>
+        </p>
+        <div class="copyright">
+          <p>&copy;</p>
+          <p>2008–2018</p>
+          <p>I AM WOMEN</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <div class="modal-overlay"></div>
+  <script src="js/jQuery3.3.1.min.js"></script>
+  <script src="js/script-catalog.js"></script>
+</body>
+
+</html>

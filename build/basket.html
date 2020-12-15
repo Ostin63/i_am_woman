@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basket</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header-catalog">
+    <h1 hidden>Каталог одежды</h1>
+    <nav class="catalog--nav container">
+      <div class="catalog-logo">
+        <a href="index.html" title="вход на главную страницу">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-dekstop.png">
+            <img src="img/logo-tablet.png" srcset="img/logo-tablet.png" alt="image" alt="logo">
+          </picture>
+        </a>
+      </div>
+      <p class="button btn-catalog" type="button"><a href="catalog.html">Каталог</a></p>
+      <p class="button btn-delivery" type="button"><a href="delivery.html">Оплата и доставка</a></p>
+      <p class="button btn-basket action" type="button">
+        <a href="basket.html">Карзина</a>
+        <span class="basket-counter">1</span>
+      </p>
+      <a class="button btn-office" href="input-office.html" type="button">Личный кабинет</a>
+      <div class="block-user">
+        <p>Дмитрий</p>
+      </div>
+    </nav>
+  </header>
+  <div class="popup-catalog">
+    <div class="modal container">
+      <div class="modal__button">
+        <button class="modal__toogle toogle">
+          <span class="toogle-top"></span>
+          <span class="toogle-middle"></span>
+          <span class="toogle-bottom"></span>
+        </button>
+        <button class="close"></button>
+      </div>
+      <nav class="modal--nav">
+        <h2>Каталог</h2>
+        <ul class="modal--item">
+          <li class="modal--list"><a href="#">Пальто</a></li>
+          <li class="modal--list"><a href="#">Жилеты и жакеты</a></li>
+          <li class="modal--list"><a href="#">Костюмы</a></li>
+          <li class="modal--list"><a href="#">Трикотаж</a></li>
+          <li class="modal--list"><a href="#">Платья</a></li>
+          <li class="modal--list"><a href="#">Блузы и топы</a></li>
+          <li class="modal--list"><a href="#">Футболки</a></li>
+          <li class="modal--list"><a href="#">Юбки и брюки</a></li>
+          <li class="modal--list"><a href="#">Аксессуары</a></li>
+          <li class="modal--list"><a href="#brand">О бренде</a></li>
+          <li class="modal--list"><a href="#">Оферта</a></li>
+          <li class="modal--list"><a href="#">Оплата и доставка</a></li>
+          <li class="modal--list"><a href="#">Возврат</a></li>
+          <li class="modal--list"><a href="#">Контакты</a></li>
+          <li class="modal--list"><a href="#">Отзывы</a></li>
+          <li class="modal--list"><a href="#new">New</a></li>
+          <li class="modal--list"><a href="#">Sale</a></li>
+          <li class="modal--list tablet"><a href="#">Looks</a></li>
+          <li class="modal--list tablet"><a href="#blog">Блог</a></li>
+          <li class="modal--list tablet"><a href="#">Streetstyle</a></li>
+          <li class="modal--list tablet modal-priv"><a href="#">Войти в личный кабинет</a></li>
+        </ul>
+      </nav>
+      <form class="menu modal-search" id="search" method="GET">
+        <button class="menu-search" type="submit" form="search">
+          <span class="menu-search--lens"></span>
+          <span class="menu-search--pen"></span>
+        </button>
+        <p><input class="form-input" type="search" placeholder="Найти на сайте"></p>
+      </form>
+    </div>
+    <p class="left-vertical-label"><span></span>Распродажа SS’18</p>
+  </div>
+  <main>
+    <section>
+      <h1 hidden>Корзина</h1>
+      <div class="basket container">
+        <div class="empty--basket">
+          <p class="empty--basket-text">Ваша корзина сейчас пуста</p>
+        </div>
+        <form class="basket__form" method="post" action="" enctype="multipart/form-data">
+          <div class="basket__product">
+            <input class="basket__name" type="text" name="" value="Платье">
+            <input class="basket__price" type="text" name="" value="2900">
+            <div>руб.</div>
+          </div>
+          <div class="basket__delete">
+            <button class="button button__del">удалить</button>
+          </div>
+          <div class="basket__total">
+            <div>Итого:</div>
+            <input type="total__text" name="" value="2900">
+            <div>руб.</div>
+          </div>
+          <div class="basket__get">
+            <a class="button btn__get" type="submit" href="basket.html">Оформить заказ</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="catalog-footer footer">
+    <div class="footer-block container">
+      <div class="footer--info area-footer-info">
+        <div class="footer-phone">
+          <p class="footer-item">Звонок с сайта:</p>
+          <p class="phone">+7 495 792 93 12</p>
+        </div>
+        <div class="footer-network">
+          <p class="footer-item">Присоединяйся:</p>
+          <ul>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.youtube.com/">Youtube</a></li>
+            <li><a href="https://vk.com/">Vkontakte</a></li>
+          </ul>
+        </div>
+        <div class="footer-form">
+          <form class="footer-form--login" action="#" method="post">
+            <p><input class="footer-form-submit" type="submit" value="Получите скидку 5%"></p>
+            <div class=footer-form--item">
+              <p class="footer-form-mail">
+                <label for="e-mail-1"></label>
+                <input class="mail" type="text" name="e-mail" id="e-mail-1" placeholder="Ваш E-mail">
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="payment">
+          <p class="footer-item">Принимаем к оплате:</p>
+          <ul>
+            <li>
+              <img src="img/visa.png" width="36" height="36" alt="visa">
+            </li>
+            <li>
+              <img src="img/mastercard.png" width="57" height="36" alt="mastercard">
+            </li>
+            <li>
+              <img src="img/paypal.png" width="36" height="36" alt="paypal">
+            </li>
+          </ul>
+        </div>
+        <p class="choice-of-pay">Вы можете оплатить наличными при получении либо выбрать <a href="#">другой способ</a>
+        </p>
+        <div class="copyright">
+          <p>&copy;</p>
+          <p>2008–2018</p>
+          <p>I AM WOMEN</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+</html>
