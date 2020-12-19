@@ -17,6 +17,10 @@
 
   .modal {
     box-sizing: border-box;
+
+    .modal-search {
+      display: none;
+    }
   }
 }
 
@@ -41,6 +45,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
   a {
     text-decoration: none;
   }
@@ -114,10 +119,6 @@
   }
 }
 
-.modal-search {
-  display: none;
-}
-
 @media @tablet-widths {
   .popup-catalog {
     width: 764px;
@@ -136,6 +137,29 @@
       width: 743px;
       height: 823px;
 
+      .modal-search {
+        position: relative;
+        width: 285px;
+        margin-left: 80px;
+        margin-top: 120px;
+        display: flex;
+        border-bottom: 1px solid @text-color-black;
+
+        input {
+          width: 264px;
+          font-size: 18px;
+          font-weight: 300;
+          font-family: 'Cormorant', 'Arial', serif;
+          text-align: center;
+          border: none;
+          background: rgba(255, 255, 255, 0);
+          outline: none;
+
+          &::placeholder {
+            color: #0b0b0b;
+          }
+        }
+      }
     }
   }
 
@@ -195,26 +219,6 @@
       &::before,
       &::after {
         top: 45px;
-      }
-    }
-  }
-
-  .modal-search {
-    width: 285px;
-    margin-left: 80px;
-    margin-top: 120px;
-    display: flex;
-    border-bottom: 1px solid @text-color-black;
-
-    .form-input {
-      width: 264px;
-      font-size: 18px;
-      font-weight: 300;
-      font-family: 'Cormorant', 'Arial', serif;
-      text-align: center;
-
-      &::placeholder {
-        color: #0b0b0b;
       }
     }
   }

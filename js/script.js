@@ -83,6 +83,7 @@ $(document).ready(function () {
     pagination: true,
     autoplay: false,
     navigation: true,
+    dotsEach: true,
     navigationText: ["", ""],
     onInitialized: counterThreLength,
     onTranslated: counterThree,

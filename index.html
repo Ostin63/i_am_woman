@@ -185,7 +185,7 @@
     <div class="counter">01 &sol;</div>
     <div class="counter-sub"></div>
   </header>
-  
+
   <div class="popup-catalog">
     <div class="modal container">
       <div class="modal__button">
@@ -197,7 +197,9 @@
         <button class="close"></button>
       </div>
       <nav class="modal--nav">
-        <a href="catalog.html"><h2>Каталог</h2></a>
+        <a href="catalog.html">
+          <h2>Каталог</h2>
+        </a>
         <ul class="modal--item">
           <li class="modal--list"><a href="#">Пальто</a></li>
           <li class="modal--list"><a href="#">Жилеты и жакеты</a></li>
@@ -222,12 +224,10 @@
           <li class="modal--list tablet modal-priv"><a href="input-office.html">Войти в личный кабинет</a></li>
         </ul>
       </nav>
-      <form class="search">
-        <input class="search-input" id="input" type="text" autocomplete="off" />
-        <label class="search-label" for="input"></label>
+      <form class="modal-search">
+        <input type="text" placeholder="Найдите на сайте">
         <button class="search-button" type="reset"></button>
         <div class="search-border"></div>
-        <div class="search-close"></div>
       </form>
     </div>
     <p class="left-vertical-label"><span></span>Распродажа SS’18</p>
@@ -379,6 +379,18 @@
       <div class="blog-counter-sub"></div>
       <div class="blog__item owl-carousel slide-3">
         <div class="blog__cart">
+          <p>#советы</p>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/blog_tips-2-destop.jpg">
+            <source media="(min-width: 764px)" srcset="img/blog_tips-2-tablet.jpg">
+            <img src="img/blog_tips-2.jpg" srcset="img/blog_tips-2.jpg" alt="tips" width="244" height="371" alt="blog">
+          </picture>
+          <h3>Лучший выбор: костюмы’18</h3>
+          <p class="blog__item--text">Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в
+            конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни
+          </p>
+        </div>
+        <div class="blog__cart">
           <p>#новости</p>
           <picture>
             <source media="(min-width: 1440px)" srcset="img/blog_news-desktop.jpg">
@@ -388,7 +400,8 @@
           <h3>Аксессуары осень — зима ‘18</h3>
           <p class="blog__item--text">Аксессуары являются важнейшим частью для создания целостного образа. Правильно
             подобранные украшения помогут сделать лук более&nbsp;гармоничным и стильным, ну а неправильно —испортят
-            <br>ваш лук</p>
+            <br>ваш лук
+          </p>
         </div>
         <div class="blog__cart">
           <p>#советы</p>
@@ -401,18 +414,6 @@
           <p class="blog__item--text">Кому-то нравится строгий стиль в&nbsp;одежде, а кому-то приходится
             его&nbsp;придерживаться из-за офисного&nbsp;дресс-кода. Так или иначе,&nbsp;не стоит превращать
             деловой&nbsp;стиль в скучный и консервативный</p>
-        </div>
-        <div class="blog__cart">
-          <p>#советы</p>
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/blog_tips-2-destop.jpg">
-            <source media="(min-width: 764px)" srcset="img/blog_tips-2-tablet.jpg">
-            <img src="img/blog_tips-2.jpg" srcset="img/blog_tips-2.jpg" alt="tips" width="244" height="371" alt="blog">
-          </picture>
-          <h3>Лучший выбор: костюмы’18</h3>
-          <p class="blog__item--text">Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в
-            конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни
-          </p>
         </div>
         <div class="blog__cart">
           <p>#тенденции</p>
