@@ -1721,6 +1721,7 @@ input::-ms-clear {
           animation: show-opacity 8s;
 }
 .section-item {
+  padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

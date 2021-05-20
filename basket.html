@@ -17,17 +17,17 @@
         <a href="index.html" title="вход на главную страницу">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-dekstop.png">
-            <img src="img/logo-tablet.png" srcset="img/logo-tablet.png" alt="image" alt="logo">
+            <img src="img/logo-tablet.png" srcset="img/logo-tablet.png" alt="logo">
           </picture>
         </a>
       </div>
-      <p class="button btn-catalog" type="button"><a href="catalog.html">Каталог</a></p>
-      <p class="button btn-delivery" type="button"><a href="delivery.html">Оплата и доставка</a></p>
-      <p class="button btn-basket action" type="button">
+      <p class="button btn-catalog"><a href="catalog.html">Каталог</a></p>
+      <p class="button btn-delivery"><a href="delivery.html">Оплата и доставка</a></p>
+      <p class="button btn-basket action">
         <a href="basket.html">Карзина</a>
         <span class="basket-counter">1</span>
       </p>
-      <a class="button btn-office" href="input-office.html" type="button">Личный кабинет</a>
+      <a class="button btn-office" href="input-office.html">Личный кабинет</a>
       <div class="block-user">
         <p>Дмитрий</p>
       </div>
@@ -81,15 +81,15 @@
   </div>
   <main>
     <section>
-      <h1 hidden>Корзина</h1>
+      <h1 class="visuallyHidden">Корзина</h1>
       <div class="basket container">
         <div class="empty--basket">
           <p class="empty--basket-text">Ваша корзина сейчас пуста</p>
         </div>
-        <form class="basket__form" method="post" action="" enctype="multipart/form-data">
+        <form class="basket__form" method="post" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data">
           <div class="basket__product">
-            <input class="basket__name" type="text" name="" value="Платье">
-            <input class="basket__price" type="text" name="" value="2900">
+            <input class="basket__name" type="text" name="basket name" value="Платье">
+            <input class="basket__price" type="text" name="basket price" value="2900">
             <div>руб.</div>
           </div>
           <div class="basket__delete">
@@ -97,11 +97,11 @@
           </div>
           <div class="basket__total">
             <div>Итого:</div>
-            <input type="total__text" name="" value="2900">
+            <input type="text" name="total text" value="2900">
             <div>руб.</div>
           </div>
           <div class="basket__get">
-            <a class="button btn__get" type="submit" href="basket.html">Оформить заказ</a>
+            <a class="button btn__get" href="basket.html">Оформить заказ</a>
           </div>
         </form>
       </div>
@@ -125,7 +125,7 @@
         <div class="footer-form">
           <form class="footer-form--login" action="#" method="post">
             <p><input class="footer-form-submit" type="submit" value="Получите скидку 5%"></p>
-            <div class=footer-form--item">
+            <div class="footer-form--item">
               <p class="footer-form-mail">
                 <label for="e-mail-1"></label>
                 <input class="mail" type="text" name="e-mail" id="e-mail-1" placeholder="Ваш E-mail">

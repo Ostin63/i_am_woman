@@ -17,17 +17,17 @@
         <a href="index.html" title="вход на главную страницу">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-dekstop.png">
-            <img src="img/logo-tablet.png" srcset="img/logo-tablet.png" alt="image" alt="logo">
+            <img src="img/logo-tablet.png" srcset="img/logo-tablet.png" alt="logo">
           </picture>
         </a>
       </div>
-      <p class="button btn-catalog action" type="button"><a href="#">Каталог</a></p>
-      <p class="button btn-delivery" type="button"><a href="delivery.html">Оплата и доставка</a></p>
-      <p class="button btn-basket" type="button">
+      <p class="button btn-catalog action"><a href="#">Каталог</a></p>
+      <p class="button btn-delivery"><a href="delivery.html">Оплата и доставка</a></p>
+      <p class="button btn-basket">
         <a href="basket.html">Карзина</a>
         <span class="basket-counter" id="clicks">0</span>
       </p>
-      <a class="button btn-office" href="#" type="button">Личный кабинет</a>
+      <a class="button btn-office" href="#">Личный кабинет</a>
       <div class="block-user">
         <p>Дмитрий</p>
       </div>
@@ -89,9 +89,10 @@
     <p class="left-vertical-label"><span></span>Распродажа SS’18</p>
   </div>
   <main class="main-catalog container">
-    <section class="main-catalog__section">
+    <h1 hidden>Доставка и оплата</h1>
+    <div class="main-catalog__section">
       <h2>Пальто</h2>
-      <lu class="section-item">
+      <ul class="section-item">
         <li>
           <div class="cart">
             <img src="img/img-catalog/coat-1.jpg" alt="Пальто">
@@ -138,11 +139,11 @@
           <p class="price"><span></span>8 900 рублей</p>
           <p><button class="button key-buy">купить</button></p>
         </li>
-      </lu>
-    </section>
+      </ul>
+    </div>
     <section class="main-catalog__section">
       <h2>Жилеты и жакеты</h2>
-      <lu class="section-item">
+      <ul class="section-item">
         <li>
           <img src="img/img-catalog/vest-1.jpg" alt="Жилет">
           <p class="text">Жилет</p>
@@ -179,11 +180,11 @@
           <p class="price"><span></span>8 900 рублей</p>
           <p><button class="button key-buy">купить</button></p>
         </li>
-      </lu>
+      </ul>
     </section>
     <section class="main-catalog__section">
       <h2>Костюмы</h2>
-      <lu class="section-item">
+      <ul class="section-item">
         <li>
           <img src="img/img-catalog/costume-1.jpg" alt="Костюм">
           <p class="text">Костюм</p>
@@ -220,11 +221,11 @@
           <p class="price"><span></span>8 900 рублей</p>
           <p><button class="button key-buy">купить</button></p>
         </li>
-      </lu>
+      </ul>
     </section>
     <section class="main-catalog__section">
       <h2>Платье</h2>
-      <lu class="section-item">
+      <ul class="section-item">
         <li>
           <img src="img/img-catalog/dress-1.jpg" alt="Платье">
           <p class="text">Платье</p>
@@ -261,11 +262,11 @@
           <p class="price"><span></span>8 900 рублей</p>
           <p><button class="button key-buy">купить</button></p>
         </li>
-      </lu>
+      </ul>
     </section>
     <section class="main-catalog__section">
       <h2>Блузы и топы</h2>
-      <lu class="section-item">
+      <ul class="section-item">
         <li>
           <img src="img/img-catalog/blouse-1.jpg" alt="Блузка">
           <p class="text">Блузка</p>
@@ -302,11 +303,11 @@
           <p class="price"><span></span>8 900 рублей</p>
           <p><button class="button key-buy">купить</button></p>
         </li>
-      </lu>
+      </ul>
     </section>
     <section class="main-catalog__section">
       <h2>Юбки и брюки</h2>
-      <lu class="section-item">
+      <ul class="section-item">
         <li>
           <img src="img/img-catalog/pants-1.jpg" alt="Брюки">
           <p class="text">Брюки</p>
@@ -343,11 +344,11 @@
           <p class="price"><span></span>8 900 рублей</p>
           <p><button class="button key-buy">купить</button></p>
         </li>
-      </lu>
+      </ul>
     </section>
     <section class="main-catalog__section">
       <h2>Аксессуары</h2>
-      <lu class="section-item">
+      <ul class="section-item">
         <li>
           <img src="img/img-catalog/accessories-1.jpg" alt="accessories">
           <p class="text">Аксессуары</p>
@@ -384,7 +385,7 @@
           <p class="price"><span></span>8 900 рублей</p>
           <p><button class="button key-buy">купить</button></p>
         </li>
-      </lu>
+      </ul>
     </section>
     <div class="product__get">
       <div class="product__get--border">
@@ -410,7 +411,7 @@
         <div class="footer-form">
           <form class="footer-form--login" action="#" method="post">
             <p><input class="footer-form-submit" type="submit" value="Получите скидку 5%"></p>
-            <div class=footer-form--item">
+            <div class="footer-form--item">
               <p class="footer-form-mail">
                 <label for="e-mail-1"></label>
                 <input class="mail" type="text" name="e-mail" id="e-mail-1" placeholder="Ваш E-mail">

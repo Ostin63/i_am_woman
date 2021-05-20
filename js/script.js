@@ -160,7 +160,6 @@ $(document).ready(function () {
     });
   });
   waypoints[0].options.offset = -1;
-
 });
 
 // Блок новинок переключатель
